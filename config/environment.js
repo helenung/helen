@@ -44,9 +44,7 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    if (environment === 'production') {
-      ENV.rootURL = '/index.html/';
-    }
+    ENV.rootURL = 'https://helenung.github.io/';
   }
 
   return ENV;
