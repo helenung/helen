@@ -1,0 +1,8 @@
+{{page-title "Art"}}
+
+{{#each this.artEntries as |art|}}
+  <div class="art-container display-flex flex-col">   
+    <img class="art-image" src={{asset-url art.image}} alt="a photo of art" />
+    <span class="subtitle">{{art.description}}</span>
+  </div>   
+{{/each}}

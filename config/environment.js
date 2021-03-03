@@ -44,7 +44,9 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    // here you can enable a production-specific feature
+    if (environment === 'production') {
+      ENV.rootURL = '/index.html/';
+    }
   }
 
   return ENV;
