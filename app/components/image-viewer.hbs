@@ -1,0 +1,12 @@
+<img {{on "click" this.openImageViewer}} class="image-viewer__image" src={{@imgSrc}} alt={{@imgDesc}} />
+<span class="image-viewer__subtitle">{{@imgDesc}}</span>
+
+{{#if this.isImageViewerOpen}}
+  <div class="image-viewer__takeover" {{on "click" this.clickTakeover}}> 
+    <button {{on "click" this.closeImageViewer}} class="image-viewer__close">x</button>
+    <img class="image-viewer__image--full" src={{@imgSrc}} alt={{@imgAlt}} /> 
+    {{#if @imgDesc}}
+      <span class="image-viewer__takeover-subtitle">{{@imgDesc}}</span>
+    {{/if}}
+  </div>
+{{/if}}

@@ -34,8 +34,13 @@ ul {
   padding: 0;
 }
 
-.me-image, .photography-image, .art-image, .bird-image {
-  width: 400px;
+.image-viewer__image {
+  width: 50vw;
+}
+
+.image-viewer__image--full {
+  width: 70vw;
+  max-height: 90vh;
 }
 
 .display-flex {
@@ -58,9 +63,37 @@ ul {
   margin-right: auto;   
 }
 
-.subtitle {
+@media screen and (max-width: 600px) {
+  .cool-container {
+    padding: 4px 8px;
+    width: 100%;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav li {
+    padding: 4px;
+    margin: 4px;
+  }
+
+  .image-viewer__image {
+    width: 90vw;
+  }
+}
+
+.align-center {
+  align-items: center;
+}
+
+.image-viewer__subtitle {
   padding: 4px 0 12px;
   text-align: center;
+}
+
+.image-viewer__takeover-subtitle {
+  color: white;
 }
 
 .art-container {
@@ -69,4 +102,29 @@ ul {
 
 .bird-container {
   align-items: center;
+}
+
+.image-viewer__close {    
+  height: 28px;
+  width: 28px;
+  color: rgba(0,0,0,.8);
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 24px;
+}
+
+.image-viewer__takeover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;    
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.8);
 }

@@ -2,7 +2,10 @@
 
 {{#each this.birds as |bird|}}
   <div class="bird-container display-flex flex-col">   
-    <img class="bird-image" src={{asset-url bird.image}} alt="a photo of bird" />
-    <span class="subtitle">{{bird.description}}, spotted in {{bird.location}}</span>
+    <ImageViewer 
+      @imgSrc={{asset-url bird.image}} 
+      @imgAlt="a photo of a bird" 
+      @imgDesc="{{bird.description}}, spotted in {{bird.location}}" 
+    />
   </div>   
 {{/each}}

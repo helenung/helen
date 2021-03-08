@@ -1,4 +1,9 @@
 {{page-title "Photography"}}
 {{#each this.photos as |photo|}}
-  <img class="photography-image" src={{asset-url photo}} alt="a photo that I took" />
+  <div class="display-flex flex-col align-center">   
+    <ImageViewer 
+      @imgSrc={{asset-url photo}} 
+      @imgAlt="a photo that I took" 
+    />
+  </div>
 {{/each}}
