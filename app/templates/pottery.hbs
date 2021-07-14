@@ -1,0 +1,9 @@
+{{page-title "Pottery"}}
+
+{{#each this.potteryEntries as |pottery|}}
+  <div class="pottery-container display-flex flex-col">   
+    <ImageViewer @imgSrc={{asset-url pottery.image}} @imgDesc={{pottery.description}} />
+  </div>   
+{{/each}}
+
+

@@ -11,4 +11,5 @@ Router.map(function () {
   this.route('art');
   this.route('bird-watching');
   this.route('projects');
+  this.route('pottery');
 });

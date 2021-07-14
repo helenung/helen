@@ -61,6 +61,7 @@ ul {
   width: 60vw;
   margin-left: auto;
   margin-right: auto;   
+  border-radius: 4rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -104,6 +105,10 @@ ul {
   align-items: center;
 }
 
+.pottery-container {
+  align-items: center;
+}
+
 .image-viewer__close {    
   height: 28px;
   width: 28px;
@@ -127,4 +132,8 @@ ul {
   top: 0;
   left: 0;
   background-color: rgba(0,0,0,.8);
+}
+
+.me-image {
+  max-width: 90vw;
 }
